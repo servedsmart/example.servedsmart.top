@@ -3,7 +3,7 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches:
-      - autoshop
+      - cms
 
 jobs:
   deploy:
@@ -30,4 +30,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN_AUTOSHOP }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID_AUTOSHOP }}
-          command: pages deploy ./public --project-name=${{ secrets.CLOUDFLARE_PROJECT_NAME_AUTOSHOP }}
+          command: pages deploy ./public --project-name=${{ secrets.CLOUDFLARE_PROJECT_NAME_CMS }}
