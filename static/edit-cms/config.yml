@@ -53,7 +53,7 @@ collections:
           name: "date",
           widget: "datetime",
           default: "{{now}}",
-          format: '"YYYY-MM-DDTHH:mm:ssZ"',
+          format: "YYYY-MM-DDTHH:mm:ssZ",
           picker_utc: true,
           i18n: "duplicate"
         }
@@ -151,7 +151,7 @@ collections:
           name: "date",
           widget: "datetime",
           default: "{{now}}",
-          format: '"YYYY-MM-DDTHH:mm:ssZ"',
+          format: "YYYY-MM-DDTHH:mm:ssZ",
           picker_utc: true,
           i18n: "duplicate"
         }
@@ -249,7 +249,7 @@ collections:
           name: "date",
           widget: "datetime",
           default: "{{now}}",
-          format: '"YYYY-MM-DDTHH:mm:ssZ"',
+          format: "YYYY-MM-DDTHH:mm:ssZ",
           picker_utc: true,
           i18n: "duplicate"
         }
@@ -347,7 +347,7 @@ collections:
           name: "date",
           widget: "datetime",
           default: "{{now}}",
-          format: '"YYYY-MM-DDTHH:mm:ssZ"',
+          format: "YYYY-MM-DDTHH:mm:ssZ",
           picker_utc: true,
           i18n: "duplicate"
         }
