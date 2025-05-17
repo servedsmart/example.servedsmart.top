@@ -38,7 +38,7 @@ collections:
     folder: "content/employees"
     create: true
     format: "toml-frontmatter"
-    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    path: "{{slug}}/index"
     media_folder: ""
     public_folder: ""
     editor:
@@ -46,6 +46,8 @@ collections:
     # same as the top level, but all fields are optional and defaults to the top level
     # can also be a boolean to accept the top level defaults
     i18n: true
+    index_file:
+      name: _index
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - {
@@ -146,7 +148,7 @@ collections:
     folder: "content/posts"
     create: true
     format: "toml-frontmatter"
-    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    path: "{{slug}}/index"
     media_folder: ""
     public_folder: ""
     editor:
@@ -154,6 +156,8 @@ collections:
     # same as the top level, but all fields are optional and defaults to the top level
     # can also be a boolean to accept the top level defaults
     i18n: true
+    index_file:
+      name: _index
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - {
@@ -254,7 +258,7 @@ collections:
     folder: "content/services"
     create: true
     format: "toml-frontmatter"
-    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    path: "{{slug}}/index"
     media_folder: ""
     public_folder: ""
     editor:
@@ -262,6 +266,8 @@ collections:
     # same as the top level, but all fields are optional and defaults to the top level
     # can also be a boolean to accept the top level defaults
     i18n: true
+    index_file:
+      name: _index
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - {
@@ -362,7 +368,7 @@ collections:
     folder: "content/terms"
     create: true
     format: "toml-frontmatter"
-    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    path: "{{slug}}/index"
     media_folder: ""
     public_folder: ""
     editor:
@@ -370,6 +376,8 @@ collections:
     # same as the top level, but all fields are optional and defaults to the top level
     # can also be a boolean to accept the top level defaults
     i18n: true
+    index_file:
+      name: _index
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - {
