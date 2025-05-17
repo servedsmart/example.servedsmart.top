@@ -61,9 +61,16 @@ collections:
           label: "Description",
           name: "description",
           widget: "string",
-          i18n: true
+          i18n: true,
+          required: false
         }
-      - { label: "Summary", name: "summary", widget: "string", i18n: true }
+      - {
+          label: "Summary",
+          name: "summary",
+          widget: "string",
+          i18n: true,
+          required: false
+        }
       - {
           label: "Categories",
           name: "categories",
@@ -83,7 +90,8 @@ collections:
               "ankündigung",
               "dienstleistung"
             ],
-          i18n: true
+          i18n: true,
+          required: false
         }
       - {
           label: "Tags",
@@ -113,7 +121,8 @@ collections:
               "wartung",
               "bedingungen"
             ],
-          i18n: true
+          i18n: true,
+          required: false
         }
       - {
           label: "Draft",
@@ -128,7 +137,8 @@ collections:
           widget: "markdown",
           modes: ["raw", "rich_text"],
           sanitize_preview: true,
-          i18n: true
+          i18n: true,
+          required: false
         }
   - name: "posts"
     label: "Posts"
@@ -159,9 +169,16 @@ collections:
           label: "Description",
           name: "description",
           widget: "string",
-          i18n: true
+          i18n: true,
+          required: false
         }
-      - { label: "Summary", name: "summary", widget: "string", i18n: true }
+      - {
+          label: "Summary",
+          name: "summary",
+          widget: "string",
+          i18n: true,
+          required: false
+        }
       - {
           label: "Categories",
           name: "categories",
@@ -181,7 +198,8 @@ collections:
               "ankündigung",
               "dienstleistung"
             ],
-          i18n: true
+          i18n: true,
+          required: false
         }
       - {
           label: "Tags",
@@ -211,7 +229,8 @@ collections:
               "wartung",
               "bedingungen"
             ],
-          i18n: true
+          i18n: true,
+          required: false
         }
       - {
           label: "Draft",
@@ -226,7 +245,8 @@ collections:
           widget: "markdown",
           modes: ["raw", "rich_text"],
           sanitize_preview: true,
-          i18n: true
+          i18n: true,
+          required: false
         }
   - name: "services"
     label: "Services"
@@ -257,9 +277,16 @@ collections:
           label: "Description",
           name: "description",
           widget: "string",
-          i18n: true
+          i18n: true,
+          required: false
         }
-      - { label: "Summary", name: "summary", widget: "string", i18n: true }
+      - {
+          label: "Summary",
+          name: "summary",
+          widget: "string",
+          i18n: true,
+          required: false
+        }
       - {
           label: "Categories",
           name: "categories",
@@ -279,7 +306,8 @@ collections:
               "ankündigung",
               "dienstleistung"
             ],
-          i18n: true
+          i18n: true,
+          required: false
         }
       - {
           label: "Tags",
@@ -309,7 +337,8 @@ collections:
               "wartung",
               "bedingungen"
             ],
-          i18n: true
+          i18n: true,
+          required: false
         }
       - {
           label: "Draft",
@@ -324,7 +353,8 @@ collections:
           widget: "markdown",
           modes: ["raw", "rich_text"],
           sanitize_preview: true,
-          i18n: true
+          i18n: true,
+          required: false
         }
   - name: "terms"
     label: "Terms"
@@ -355,9 +385,16 @@ collections:
           label: "Description",
           name: "description",
           widget: "string",
-          i18n: true
+          i18n: true,
+          required: false
         }
-      - { label: "Summary", name: "summary", widget: "string", i18n: true }
+      - {
+          label: "Summary",
+          name: "summary",
+          widget: "string",
+          i18n: true,
+          required: false
+        }
       - {
           label: "Categories",
           name: "categories",
@@ -377,7 +414,8 @@ collections:
               "ankündigung",
               "dienstleistung"
             ],
-          i18n: true
+          i18n: true,
+          required: false
         }
       - {
           label: "Tags",
@@ -407,7 +445,8 @@ collections:
               "wartung",
               "bedingungen"
             ],
-          i18n: true
+          i18n: true,
+          required: false
         }
       - {
           label: "Draft",
@@ -422,5 +461,6 @@ collections:
           widget: "markdown",
           modes: ["raw", "rich_text"],
           sanitize_preview: true,
-          i18n: true
+          i18n: true,
+          required: false
         }
