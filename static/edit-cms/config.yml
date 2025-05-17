@@ -1,37 +1,66 @@
 backend:
-  name: github
-  repo: servedsmart/servedsmart.top
-  branch: cms
-  base_url: https://sveltia-cms-auth.servedsmart-6knt8ma96knt8ma9.workers.dev
+  name: "github"
+  repo: "servedsmart/servedsmart.top"
+  branch: "cms"
+  base_url: "https://sveltia-cms-auth.servedsmart-6knt8ma96knt8ma9.workers.dev"
 
-media_folder: static/img
-public_folder: /img
+media_folder: "static/img"
+public_folder: "/img"
 
 media_libraries:
   default:
     config:
       transformations:
         raster_image: # original format
-          format: webp # new format, only `webp` is supported
+          format: "webp" # new format, only `webp` is supported
           quality: 85 # default: 85
           width: 2048 # default: original size
           height: 2048 # default: original size
         svg:
           optimize: true
 
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: "multiple_files"
+  # Required - a list of locales to show in the editor UI
+  locales: ["de", "en"]
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: "de"
+
 collections:
   - name: "employees"
     label: "Employees"
+    label_singular: "Employee"
     folder: "content/employees"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     editor:
-      preview: false
+      preview: true
+    # same as the top level, but all fields are optional and defaults to the top level
+    # can also be a boolean to accept the top level defaults
+    i18n: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime", default: "{{now}}" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          default: "{{now}}",
+          i18n: "duplicate"
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          i18n: true
+        }
+      - { label: "Summary", name: "summary", widget: "string", i18n: true }
       - {
           label: "Categories",
           name: "categories",
@@ -86,20 +115,39 @@ collections:
           label: "Body",
           name: "body",
           widget: "markdown",
-          modes: ["raw", "rich_text", sanitize_preview: true]
+          modes: ["raw", "rich_text"],
+          sanitize_preview: true,
+          i18n: true
         }
   - name: "posts"
     label: "Posts"
+    label_singular: "Post"
     folder: "content/posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     editor:
-      preview: false
+      preview: true
+    # same as the top level, but all fields are optional and defaults to the top level
+    # can also be a boolean to accept the top level defaults
+    i18n: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime", default: "{{now}}" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          default: "{{now}}",
+          i18n: "duplicate"
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          i18n: true
+        }
+      - { label: "Summary", name: "summary", widget: "string", i18n: true }
       - {
           label: "Categories",
           name: "categories",
@@ -154,20 +202,39 @@ collections:
           label: "Body",
           name: "body",
           widget: "markdown",
-          modes: ["raw", "rich_text", sanitize_preview: true]
+          modes: ["raw", "rich_text"],
+          sanitize_preview: true,
+          i18n: true
         }
   - name: "services"
     label: "Services"
+    label_singular: "Service"
     folder: "content/services"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     editor:
-      preview: false
+      preview: true
+    # same as the top level, but all fields are optional and defaults to the top level
+    # can also be a boolean to accept the top level defaults
+    i18n: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime", default: "{{now}}" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          default: "{{now}}",
+          i18n: "duplicate"
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          i18n: true
+        }
+      - { label: "Summary", name: "summary", widget: "string", i18n: true }
       - {
           label: "Categories",
           name: "categories",
@@ -222,20 +289,39 @@ collections:
           label: "Body",
           name: "body",
           widget: "markdown",
-          modes: ["raw", "rich_text", sanitize_preview: true]
+          modes: ["raw", "rich_text"],
+          sanitize_preview: true,
+          i18n: true
         }
   - name: "terms"
     label: "Terms"
+    label_singular: "Term"
     folder: "content/terms"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     editor:
-      preview: false
+      preview: true
+    # same as the top level, but all fields are optional and defaults to the top level
+    # can also be a boolean to accept the top level defaults
+    i18n: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime", default: "{{now}}" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          default: "{{now}}",
+          i18n: "duplicate"
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          i18n: true
+        }
+      - { label: "Summary", name: "summary", widget: "string", i18n: true }
       - {
           label: "Categories",
           name: "categories",
@@ -290,5 +376,7 @@ collections:
           label: "Body",
           name: "body",
           widget: "markdown",
-          modes: ["raw", "rich_text", sanitize_preview: true]
+          modes: ["raw", "rich_text"],
+          sanitize_preview: true,
+          i18n: true
         }
