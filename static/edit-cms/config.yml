@@ -119,7 +119,7 @@ collections:
           label: "Draft",
           name: "draft",
           widget: "boolean",
-          default: true,
+          default: false,
           i18n: true
         }
       - {
@@ -217,7 +217,7 @@ collections:
           label: "Draft",
           name: "draft",
           widget: "boolean",
-          default: true,
+          default: false,
           i18n: true
         }
       - {
@@ -315,7 +315,7 @@ collections:
           label: "Draft",
           name: "draft",
           widget: "boolean",
-          default: true,
+          default: false,
           i18n: true
         }
       - {
@@ -413,7 +413,7 @@ collections:
           label: "Draft",
           name: "draft",
           widget: "boolean",
-          default: true,
+          default: false,
           i18n: true
         }
       - {
