@@ -37,6 +37,7 @@ collections:
     label_singular: "Employee"
     folder: "content/employees"
     create: true
+    format: "toml-frontmatter"
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
     media_folder: ""
     public_folder: ""
@@ -132,6 +133,7 @@ collections:
     label_singular: "Post"
     folder: "content/posts"
     create: true
+    format: "toml-frontmatter"
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
     media_folder: ""
     public_folder: ""
@@ -227,6 +229,7 @@ collections:
     label_singular: "Service"
     folder: "content/services"
     create: true
+    format: "toml-frontmatter"
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
     media_folder: ""
     public_folder: ""
@@ -322,6 +325,7 @@ collections:
     label_singular: "Term"
     folder: "content/terms"
     create: true
+    format: "toml-frontmatter"
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
     media_folder: ""
     public_folder: ""
