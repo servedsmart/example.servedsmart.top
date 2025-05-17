@@ -1,6 +1,6 @@
 +++
 title = "Test"
-date = "\"2025-05-17T21:31:00+00:00\""
+date = ""
 description = "Test"
 summary = "Test"
 categories = [ "digitalisierung", "unternehmen", "heimkunden", "website", "iot", "netzwerk", "smart home", "computer", "unternehmensintern", "rechtliches", "ankündigung", "dienstleistung" ]
