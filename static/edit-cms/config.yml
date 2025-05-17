@@ -79,7 +79,8 @@ collections:
               "rechtliches",
               "ankündigung",
               "dienstleistung"
-            ]
+            ],
+          i18n: "duplicate"
         }
       - {
           label: "Tags",
@@ -108,9 +109,16 @@ collections:
               "windows",
               "wartung",
               "bedingungen"
-            ]
+            ],
+          i18n: "duplicate"
         }
-      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - {
+          label: "Draft",
+          name: "draft",
+          widget: "boolean",
+          default: true,
+          i18n: "duplicate"
+        }
       - {
           label: "Body",
           name: "body",
@@ -166,7 +174,8 @@ collections:
               "rechtliches",
               "ankündigung",
               "dienstleistung"
-            ]
+            ],
+          i18n: "duplicate"
         }
       - {
           label: "Tags",
@@ -195,9 +204,16 @@ collections:
               "windows",
               "wartung",
               "bedingungen"
-            ]
+            ],
+          i18n: "duplicate"
         }
-      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - {
+          label: "Draft",
+          name: "draft",
+          widget: "boolean",
+          default: true,
+          i18n: "duplicate"
+        }
       - {
           label: "Body",
           name: "body",
@@ -253,7 +269,8 @@ collections:
               "rechtliches",
               "ankündigung",
               "dienstleistung"
-            ]
+            ],
+          i18n: "duplicate"
         }
       - {
           label: "Tags",
@@ -282,9 +299,16 @@ collections:
               "windows",
               "wartung",
               "bedingungen"
-            ]
+            ],
+          i18n: "duplicate"
         }
-      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - {
+          label: "Draft",
+          name: "draft",
+          widget: "boolean",
+          default: true,
+          i18n: "duplicate"
+        }
       - {
           label: "Body",
           name: "body",
@@ -340,7 +364,8 @@ collections:
               "rechtliches",
               "ankündigung",
               "dienstleistung"
-            ]
+            ],
+          i18n: "duplicate"
         }
       - {
           label: "Tags",
@@ -369,9 +394,16 @@ collections:
               "windows",
               "wartung",
               "bedingungen"
-            ]
+            ],
+          i18n: "duplicate"
         }
-      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - {
+          label: "Draft",
+          name: "draft",
+          widget: "boolean",
+          default: true,
+          i18n: "duplicate"
+        }
       - {
           label: "Body",
           name: "body",
