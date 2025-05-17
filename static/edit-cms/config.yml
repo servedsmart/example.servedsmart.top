@@ -81,7 +81,7 @@ collections:
               "ankündigung",
               "dienstleistung"
             ],
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Tags",
@@ -111,14 +111,14 @@ collections:
               "wartung",
               "bedingungen"
             ],
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Draft",
           name: "draft",
           widget: "boolean",
           default: true,
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Body",
@@ -177,7 +177,7 @@ collections:
               "ankündigung",
               "dienstleistung"
             ],
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Tags",
@@ -207,14 +207,14 @@ collections:
               "wartung",
               "bedingungen"
             ],
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Draft",
           name: "draft",
           widget: "boolean",
           default: true,
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Body",
@@ -273,7 +273,7 @@ collections:
               "ankündigung",
               "dienstleistung"
             ],
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Tags",
@@ -303,14 +303,14 @@ collections:
               "wartung",
               "bedingungen"
             ],
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Draft",
           name: "draft",
           widget: "boolean",
           default: true,
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Body",
@@ -369,7 +369,7 @@ collections:
               "ankündigung",
               "dienstleistung"
             ],
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Tags",
@@ -399,14 +399,14 @@ collections:
               "wartung",
               "bedingungen"
             ],
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Draft",
           name: "draft",
           widget: "boolean",
           default: true,
-          i18n: "duplicate"
+          i18n: true
         }
       - {
           label: "Body",
