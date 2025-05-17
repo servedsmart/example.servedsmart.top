@@ -38,7 +38,7 @@ tags:
   - windows
   - wartung
   - bedingungen
-draft: true
+draft: false
 ---
 ## Test de
 
